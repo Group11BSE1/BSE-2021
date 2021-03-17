@@ -3,6 +3,6 @@ This repository is created to collect the assignment solutions for the subject S
 
 GROUP 11 MEMBERS
 
-Niwagaba Clever
-Ainebyona Albert
-Lemi Manoah Jungo
+1. Niwagaba Clever
+2. Ainebyona Albert
+3. Lemi Manoah Jungo
