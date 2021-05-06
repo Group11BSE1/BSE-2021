@@ -1,3 +1,13 @@
+# The program will compute and display information for a utility company which supplies water to its customers. #
+# For a specified customer, the program will compute and display #
+# the amount of money which the customer will be billed for water usage during the current billing period.
+
+# This program is the work product of Group 11 BSE 1 for their mid-semester assignment
+#                   GROUP 11 MEMBERS
+#       1. NIWAGABA CLEVER      2020/BSE/055/PS
+#       2. AINEBYONA ALBERT     2020/BSE/003/PS
+#       3. LEMI MANOAH JUNGO    2020/BSE/145/PS
+
 gallons_used = 0
 amount = 0
 
@@ -34,5 +44,5 @@ while True:
         print("Amount billed: $", round(amount, 2))
 
     else:
-        print("End of the line! Noble out.")
+        print("End of the line!")
         quit()
