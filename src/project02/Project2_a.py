@@ -1,18 +1,32 @@
-# The program will always read from measles.txt
+# PROJECT 02 - PART A
+
+# This program is the work product of Group 11 BSE 1
+#                   GROUP 11 MEMBERS
+#       1. NIWAGABA CLEVER      2020/BSE/055/PS
+#       2. AINEBYONA ALBERT     2020/BSE/003/PS
+#       3. LEMI MANOAH JUNGO    2020/BSE/145/PS
+
 try:
+    # The program will always read from measles.txt
     file_handle = open('measles.txt')
     print(file_handle)
+
+    # Program prompts the user for name of output file
     output_file = input("Enter name of output file: ")
     file_out = open(output_file, 'w')
-    year = input("Enter a year: ")
 
+    # Program prompts the user for the year
+    year = input("Enter a year: ").lower()
     for line in file_handle:
+
+        # Checking whether the year input is in the Year Field
         pyear = len(line)
         if year in line[pyear-5:]:
             file_out.write(line)
-        elif year == 'all' or year == 'ALL' or year == 'All' or year == '':
+        elif year == 'all' or year == ' ':
             file_out.write(line)
 
 except:
+    # If program is unable to open measles.txt file
     print("Unable to open specified file!!!")
     quit()
