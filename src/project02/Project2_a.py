@@ -17,6 +17,10 @@ try:
 
     # Program prompts the user for the year
     year = input("Enter a year: ").lower()
+    if len(year) > 4:
+        print("Invalid entry for year")
+        quit()
+
     for line in file_handle:
 
         # Checking whether the year input is in the Year Field
@@ -25,6 +29,7 @@ try:
             file_out.write(line)
         elif year == 'all' or year == ' ':
             file_out.write(line)
+    print("Check your output file: ", output_file)
 
 except:
     # If program is unable to open measles.txt file
